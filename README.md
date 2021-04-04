@@ -1,34 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies
+
+```bash
+npm install
+```
+
+2. run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. create components in comps folder 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+* Capital + Camel Case
+ 
+example. BlueButton.js 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+4. Import styled-components
 
-## Learn More
+* Capital + Camel Case 
+ 
 
-To learn more about Next.js, take a look at the following resources:
+ ```
+import styled from 'styled-components'
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Name styled components 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+* Capital + Camel Case + UI
+ 
 
-## Deploy on Vercel
+ ```
+const BlueButtonUI = styled.div`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+** css goes in here **
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`;
+```
+
+5. Create Component 
+
+* Capital + Camel Case 
+ 
+
+ ```
+export const BlueButton = () => {
+
+    return(
+
+        <BlueButtonUI></BlueButtonUI>
+
+    )
+
+} 
+```
+
+5. Display to storybook in stories/comps.stories.js
+
+ ```
+//import components from comps//
+import { Button } from '../comps/Button';
+
+//export components to storybook//
+export const Button = ButtonUI
+
+```
