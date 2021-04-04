@@ -1,17 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import { Button } from './Button';
+import { color } from '../public/color';
  
-const ButtonContainerUI = styled.button`
+const ButtonContainerUI = styled.div`
 
 width: 500px;
 height: 400px;
-font-weight: 700;
-color: blue;
-background: blue;
-border: 1px solid blue;
-transition: 0.5s cubic-bezier(0,.1,.1,2);
-cursor: pointer;
+background: ${color.blue};
 display: flex;
 justify-content: center;
 align-items: center;
@@ -29,19 +25,19 @@ export const ButtonContainer = ({  }) => {
 
     <>
 
-    <ButtonContainerUI>
+        <ButtonContainerUI>
 
-      <Button label={'1'}></Button>
-   
-      <Button label={'2'}></Button>
+        <Button label={'1'}></Button>
+    
+        <Button label={'2'}></Button>
 
-      <Button label={'3'}></Button>
+        <Button label={'3'}></Button>
 
-      <Button label={'4'}></Button>
- 
-      <Button label={'5'}></Button>
+        <Button label={'4'}></Button>
+    
+        <Button label={'5'}></Button>
 
-    </ButtonContainerUI>
+        </ButtonContainerUI>
 
     </>
   );
