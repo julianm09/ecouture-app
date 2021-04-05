@@ -6,23 +6,21 @@
 npm install
 ```
 
-2. run the development server:
+2. run the storybook:
 
 ```bash
-npm run dev
+npm run storybook
 ```
+
 
 3. create components in comps folder 
 
 * Capital + Camel Case
  
-example. BlueButton.js 
+* example: BlueButton.js 
 
 
-4. Import styled-components
-
-* Capital + Camel Case 
- 
+4. Import styled-components in component file
 
  ```
 import styled from 'styled-components'
