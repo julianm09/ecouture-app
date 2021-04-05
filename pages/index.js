@@ -12,14 +12,10 @@ justify-content: center;
 
 export default function Home() {
 
-  const color = {
-    'blue' : '#3884FF'
-  }
-
   return (
     <Container>
 
-        <ButtonContainer color={color}></ButtonContainer>
+        <ButtonContainer></ButtonContainer>
 
     </Container>
   )
