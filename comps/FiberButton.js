@@ -8,7 +8,7 @@ const FiberButtonUI = styled.div `
     height: 75px;
     box-shadow: 0px 4px 4px rgba(128,128,128,0.5);
     border-radius: 10px;
-    border: 1px solid white;
+    border: ${props=>props.borderStyle};
     background-color: ${props=>props.bg};
 
     &>* {
@@ -47,17 +47,18 @@ export const FiberButton = ({
     fiberName="Cotton Fiber",
     fiberExamples="Organic Cotton, Cotton",
     bgcolor="#36B9C5",
-    textCol="white"
+    textCol="white",
+    borderStyle="1px solid white"
 }) => {
     return (
     
-        <FiberButtonUI bg={bgcolor} textCol={textCol}>
+        <FiberButtonUI bg={bgcolor} textCol={textCol} borderStyle={borderStyle}>
             <FiberImg>ImageHere</FiberImg>
                 <FiberText>
                     <FiberNameText>
                         {fiberName}
                     </FiberNameText>
-                    
+
                     <FiberExamplesText>
                         {fiberExamples}
                     </FiberExamplesText>
