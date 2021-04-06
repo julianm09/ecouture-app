@@ -3,12 +3,17 @@ import React from 'react';
 //import components from comps//
 import { Button } from '../comps/Button';
 import { ButtonContainer } from '../comps/ButtonContainer';
+import { StoreInside} from '../comps/StoreInside';
+import { StoreContainer } from '../comps/StoreContainer';
+import { StoreText } from '../comps/StoreText';
 
 
 //export components to storybook//
 export const ButtonUI = Button;
-export const ButtonContainerUI = ButtonContainer
-
+export const ButtonContainerUI = ButtonContainer;
+export const StoreInsideUI = StoreInside;
+export const StoreContainerUI = StoreContainer;
+export const StoreTextUI = StoreText;
 
 
 //dont touch//
