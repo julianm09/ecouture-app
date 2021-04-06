@@ -11,6 +11,6 @@ border-radius: 10px;
 export const RoundBlueButton = () => {
 
     return (
-        <RoundBlueButton></RoundBlueButton>
+        <RoundBlueButton>test this button</RoundBlueButton>
     )
 }
