@@ -8,10 +8,12 @@ const StartButtonUI = styled.button`
     width: 365px;
     border-style: solid;
     border-width: 1px;
-    border-color: #FFFFFF; opacity:0.5;
+    border-color: rgba(255, 255, 255, 0.5); 
     border-radius: 10px;
-    background-color: #3884FF;
+    background-color: ${color.blue};
     color: white;
+    font-size: 24px;
+    font-weight: bold;
     
 
     `
@@ -19,6 +21,6 @@ const StartButtonUI = styled.button`
 export const StartButton = () => {
 
     return (
-        <StartButton>Get Started</StartButton>
+        <StartButtonUI>Get Started</StartButtonUI>
     )
 }

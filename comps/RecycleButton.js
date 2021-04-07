@@ -8,17 +8,17 @@ const RecycleButtonUI = styled.button`
     width: 365px;
     border-style: solid;
     border-width: 1px;
-    border-color: #FFFFFF; opacity:0.5;
+    border-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
-    background-color: #51B27E;
+    background-color: ${color.green};
     color: white;
-    
+    font-size: 18px; 
 
     `
 
 export const RecycleButton = () => {
 
     return (
-        <RecycleButton>test</RecycleButton>
+        <RecycleButtonUI>Test</RecycleButtonUI>
     )
 }
