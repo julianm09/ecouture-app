@@ -24,31 +24,31 @@ cursor: pointer;
 }
 `
 
-export const Button = ({ label="hey" }) => {
+export const Button = ({ label = "hey" }) => {
 
-const [click, setClick] = useState(false)
-const [hover, setHover] = useState(false)
+  const [click, setClick] = useState(false)
+  const [hover, setHover] = useState(false)
 
   return (
 
     <>
 
       <ButtonUI
-      onMouseEnter={() => {
-        setHover(true)
-      }}
-      onMouseLeave={() => {
-        setHover(false)
-        setClick(false)
-      }}
-      onClick={() => {
-        setClick(true)
-      }}
-      style={{
-        transform : click ? 'scale(0.9)' : hover ? 'scale(1.1)' : 'scale(1.0)',
-        border : click ? '1px solid white' : hover ? '1px solid white' : '1px solid white',
-        background : click ? 'white' : hover ? 'white' : color.blue,
-      }} type="button">
+        onMouseEnter={() => {
+          setHover(true)
+        }}
+        onMouseLeave={() => {
+          setHover(false)
+          setClick(false)
+        }}
+        onClick={() => {
+          setClick(true)
+        }}
+        style={{
+          transform: click ? 'scale(0.9)' : hover ? 'scale(1.1)' : 'scale(1.0)',
+          border: click ? '1px solid white' : hover ? '1px solid white' : '1px solid white',
+          background: click ? 'white' : hover ? 'white' : color.blue,
+        }} type="button">
         {label}
       </ButtonUI>
 
